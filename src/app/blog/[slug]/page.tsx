@@ -32,7 +32,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
         </div>
 
         <div className="flex gap-2 mb-10 flex-wrap">
-          {post.tags.map((tag) => (
+          {post.tags.map((tag: string) => (
             <span key={tag} className="text-xs text-gray-500 bg-gray-50 px-2 py-1 rounded-full">
               #{tag}
             </span>
